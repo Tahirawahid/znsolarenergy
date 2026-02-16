@@ -9,34 +9,64 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="bg-blue-900 h-15 p-5">
-        <p class="text-white">Professional Installation Across Pakistan!</p>
+      <div class="bg-[#00398f] h-15 p-5">
+        <p class="text-white text-[20px] pl-20">Professional Installation Across Pakistan!</p>
       </div>
-      <div class="flex w-full h-20">
-        <img src="Images/logo.png" class="h-30 w-auto pt-3 object-contain" />
-        <ul class="m-0 text-black bg-white flex [&>*]:flex">
+      <div class="flex items-center justify-between px-10 h-25">
+        <img
+          src="Images/logo.png"
+          class="h-30 w-auto pt-3 object-contain pr-20"
+        />
+        <ul class="m-0 text-black bg-white flex gap-2">
           <li><a class="p-3 hover:text-orange-400" href="#">Home</a></li>
-          <li><a class="p-3 hover:text-orange-400" href="#">Industries</a></li>
-          <li><a class="p-3 hover:text-orange-400" href="#">Services</a></li>
+          <li class="relative group"><a class="p-3 hover:text-orange-400" href="#">Industries</a>
+               <ul class="absolute hidden group-hover:block left-0 mt-2 z-20">
+                  <li><a class="bg-white hover:bg-[#fac02f] hover:text-white px-4 py-2 block" href="#">Home</a></li>
+                  <li><a class="bg-white hover:bg-[#fac02f]  hover:text-white px-4 py-2 block" href="#">Business</a></li>
+                  <li><a class="bg-white hover:bg-[#fac02f]  hover:text-white px-4 py-2 block" href="#">Commercial</a></li>
+  
+                </ul>
+          </li>
+          <li class="relative group"><a class="p-3 hover:text-orange-400" href="#">Services</a>
+            <ul class="absolute hidden group-hover:block left-0 mt-2 z-20">
+                  <li><a class="bg-white hover:bg-[#fac02f] hover:text-white   py-2 block" href="#">Solar Consultation</a></li>
+                  <li><a class="bg-white hover:bg-[#fac02f]  hover:text-white  py-2 block" href="#">System Desing</a></li>
+                  <li><a class="bg-white hover:bg-[#fac02f]  hover:text-white  py-2 block" href="#">Solar Installation</a></li>
+                  <li><a class="bg-white hover:bg-[#fac02f]  hover:text-white  py-2 block" href="#">Solar Maintenance</a></li>
+                  <li><a class="bg-white hover:bg-[#fac02f]  hover:text-white  py-2 block" href="#">Earthing Work</a></li>
+                </ul>
+          </li>
           <li><a class="p-3 hover:text-orange-400" href="#">Projects</a></li>
           <li><a class="p-3 hover:text-orange-400" href="#">Blog</a></li>
-          <li><a class="p-3 hover:-orange-400" href="#">Contact</a></li>
+          <li><a class="p-3 hover:text-orange-400" href="#">Contact</a></li>
         </ul>
-        <div class="bg-orange-500 text-white py-3 px-5">
-          <p>Need help?</p>
-          <p>+92 321 9210180</p>
+        <div class="bg-[#fac02f] text-white h-25 w-70">
+          <p class="px-10 text-[20px] pt-3">Need help?</p
+            
+            >
+          <p class="text-[20px] px-10">+92 321 9210180</p>
         </div>
       </div>
     </header>
     <!-- Header End -->
-    <main class="w-full mt-10">
+    <main>
       <!-- Hero Section -->
-      <section class="bg-amber-400 mx-auto">
-        <h1>Solar Power Better Future</h1>
-        <p>
-          Nullam vel nibh facilisis lectus fermentum ultrices quis non risus.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-        </p>
+      <section
+        class="bg-[url(./images/banner.jpg)] bg-no-repeat bg-center bg-cover relative"
+      >
+        <div class="absolute bg-black/50 inset-0"></div>
+        <div class="container relative mx-auto h-140">
+          <h1 class="text-7xl text-white pt-15 pl-15 pb-5">
+            <br />Your Trusted Inverex <br />Solar Installation Partner
+          </h1>
+          <p class="text-[20px] text-white pl-15 pb-5">
+            We provides expert Inverex solar installation services for homes and
+            businesses across Pakistan<br />Beat load shedding, reduce your
+            electricity bills, and switch to reliable solar power with
+            confidence
+          </p>
+          <button class="bg-[#fac02f] h-10 w-30 text-white rounded-xl ml-15">Projects</button>
+        </div>
       </section>
       <!-- Feature Section -->
       <section></section>
@@ -58,8 +88,9 @@
       <section></section>
       <!-- FAQ'S Section -->
       <section></section>
+      <div class="h-100"></div>
       <!-- Footer -->
-       <footer></footer>
+      <footer></footer>
     </main>
   </body>
 </html>
